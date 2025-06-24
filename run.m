@@ -1,6 +1,6 @@
 clear all
 
-rootDir = 'E:\我的论文\高时间分辨率拉曼细菌识别\code\data';
+rootDir = 'E:\code\data';
 classes = {'CJ','EC','LM','SA','ST'};
 numPerFile = 100; 
 imgSize = [20, 2000, 1];
