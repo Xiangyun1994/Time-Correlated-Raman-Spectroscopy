@@ -4,7 +4,6 @@ rootDir = 'E:\code\data';
 classes = {'CJ','EC','LM','SA','ST'};
 numPerFile = 100; 
 imgSize = [20, 2000, 1];
-z = 1:5:100;
 
 allData = [];
 allLabels = [];
@@ -17,7 +16,6 @@ for classIdx = 1:length(classes)
     for i = 1:length(files)
         f = load(fullfile(classFolder, files(i).name)); 
         data = f.spectra;
-        data = data(z,:);
 
         allData(:, :, end+1) = data; 
         allLabels(end+1) = classIdx; 
