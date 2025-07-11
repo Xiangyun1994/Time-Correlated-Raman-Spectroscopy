@@ -52,11 +52,11 @@ numClasses = 5;
 layers = [
     imageInputLayer(inputSize, 'Name', 'input')
 
-    convolution2dLayer(3, 32, 'Padding', 'same', 'Name', 'conv1')
+    convolution2dLayer([3,5], 32, 'Padding', 'same', 'Name', 'conv1')
     batchNormalizationLayer('Name', 'bn1')
     reluLayer('Name', 'relu1')
 
-    convolution2dLayer(3, 64, 'Padding', 'same', 'Name', 'conv2')
+    convolution2dLayer([3,5], 64, 'Padding', 'same', 'Name', 'conv2')
     batchNormalizationLayer('Name', 'bn2')
     reluLayer('Name', 'relu2')
     maxPooling2dLayer(2, 'Stride', 2, 'Name', 'pool2')
